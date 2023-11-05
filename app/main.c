@@ -5,5 +5,5 @@
 int main()
 {
     printf("Hello World!\n");
-    return myfunc(2);
+    printf("%f", my_sqrt(4));
 }
