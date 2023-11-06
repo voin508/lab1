@@ -1,3 +1,4 @@
+[![Coverage Status](https://coveralls.io/repos/github/voin508/lab1/badge.svg?branch=main)](https://coveralls.io/github/voin508/lab1?branch=main)
 # План тестирования
 
 ## Атестационное тестирование:
