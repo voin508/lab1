@@ -1,5 +1,4 @@
-https://coveralls.io/repos/github/voin508/lab1/badge.svg?branch=main(Coverage Status)!:https://coveralls.io/github/voin508/lab1?branch=main# План тестирования
-
+[![Coverage Status](https://coveralls.io/repos/github/voin508/lab1/badge.svg?branch=main)](https://coveralls.io/github/voin508/lab1?branch=main)
 ## Атестационное тестирование:
 Тест А1 (положительный)
 Начальное состояние: Открытый терминал
