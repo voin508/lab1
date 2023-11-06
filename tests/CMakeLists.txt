@@ -11,8 +11,8 @@ include(GoogleTest)
 
 set (TESTS
         fibonachi_test.h
-	my_sqrt_test.h
-	integration_test.h
+	square_test.h
+        tst_test1.h
         )
 
 include_directories(${PROJECT_NAME} PUBLIC ../app)
