@@ -23,7 +23,7 @@ int compareSquareResults(double a, double b, double c, double* expected, int num
     }
 
     for (int i = 0; i < 2; i++) {
-        if (roots[i] != roots[0] && roots[i] != roots[1]) {
+        if (expected[i] != roots[0] && expected[i] != roots[1]) {
             return 0;
         }
     }
