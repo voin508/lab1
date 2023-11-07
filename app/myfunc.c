@@ -34,6 +34,15 @@ int fibonachi(int num) {
 }
 
 int square(double a, double b, double c, double* roots) {
+    if (a ==0 && b !=0){
+	roots[0] = (-c)/b;
+	roots[1] = (-c)/b;
+        return 0;
+    }
+    if (a ==0 && b ==0){
+	return 1;
+    }
+
     double discriminant = b * b - 4 * a * c;
 
     if (discriminant >= 0) {

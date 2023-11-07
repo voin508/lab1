@@ -50,6 +50,19 @@ TEST(SQUARETest, discr_eq_0) {
     int numRoots = 1;
     ASSERT_EQ(compareSquareResults(a, b, c, expected, numRoots), 1);
 }
+TEST(SQUARETest, a_is_null) {
+    double a = 0, b = 2, c = -2;
+    double expected[] = {1.0, 1.0};
+    int numRoots = 1;
+    ASSERT_EQ(compareSquareResults(a, b, c, expected, numRoots), 1);
+}
+
+TEST(SQUARETest, a_b_is_null) {
+    double a = 0, b = 0, c = 1;
+    int numRoots = 0;
+    ASSERT_EQ(compareSquareResults(a, b, c, NULL, numRoots), 1);
+}
+
 TEST(SQUARETest, integrated) {
     double a = double(fibonachi(5)), b = double(fibonachi(5)), c = double(fibonachi(5));
     int numRoots = 0;
