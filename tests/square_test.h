@@ -8,27 +8,26 @@ extern "C" {
 }
 
 int compareSquareResults(double a, double b, double c, double* expected, int numRoots) {
-    double* test = square(a, b, c);
+    double roots[2];
+    int test = square(a, b, c, roots);
 
-    if (test != NULL && numRoots == 0 || test == NULL && numRoots != 0) {
+    if (test != 1 && numRoots == 0 || test == 1 && numRoots != 0) {
         return 0;
     }
-    if (test == NULL && numRoots == 0){
+    if (test == 1 && numRoots == 0){
 	return 1;
-	}
+    }
 
-    if (numRoots == 1 && test[0] != test[1]) {
+    if (numRoots == 1 && roots[0] != roots[1]) {
 	return 0;
     }
 
     for (int i = 0; i < 2; i++) {
-        if (test[i] != expected[0] && test[i] != expected[1]) {
-            free(test);
+        if (roots[i] != roots[0] && roots[i] != roots[1]) {
             return 0;
         }
     }
 
-    free(test);
     return 1;
 }
 

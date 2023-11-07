@@ -5,7 +5,7 @@ int myfunc(int b);
 
 int fibonachi(int num);
 
-double* square(double a, double b, double c);
+int square(double a, double b, double c, double* roots);
 
 void printStdoutMessages();
 
